@@ -1,0 +1,24 @@
+@import "css/variable.css";
+
+.navWrap{
+    width: 200px;
+    background: $whiteBg;
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.navHeader{
+    font-size: 16px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 40px;
+}
+.navList{
+    margin-top: 5px;
+}
+.navItem{
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+{
+    "sourcemapName": "zhenaicom.template",
+    "alias": {
+        "src": "src",
+        "common": "src/common"
+    },
+    "entryPage": "index.tsx",
+    "outputPath": "dist",
+    "eslintSwitch": false,
+    "eslintignore": [
+        "dist"
+    ],
+    "copyStatic": [
+        {
+            "from": "",
+            "to": ""
+        }
+    ],
+    "dev": {
+        "host": "localhost",
+        "port": "8081",
+        "disableHostCheck": true,
+        "hot": true,
+        "allowedHosts": [
+            "localhost"
+        ],
+        "proxyTable": {
+            "/api": {
+                "target": "http://localhost:8080/",
+                "pathRewrite": {
+                    "^/api" : ""
+                }
+            }
+        },
+        "devtool": "source-map",
+        "publicPath": "/"
+    },
+    "build": {
+        "devtool": "nosources-source-map",
+        "publicPath": "/"
+    }
+}

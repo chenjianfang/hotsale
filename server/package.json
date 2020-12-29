@@ -1,0 +1,24 @@
+{
+    "name": "hotsale",
+    "version": "1.0.0",
+    "description": "淘宝热卖node服务",
+    "main": "app.js",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development nodemon -L ./app/app.js --ignore 'node_modules/*'"
+    },
+    "keywords": [
+        "hotsale"
+    ],
+    "author": "chenjianfang",
+    "license": "MIT",
+    "dependencies": {
+        "@koa/router": "^10.0.0",
+        "assert": "^2.0.0",
+        "axios": "^0.21.0",
+        "cheerio": "^1.0.0-rc.3",
+        "koa": "^2.13.0",
+        "koa-bodyparser": "^4.3.0",
+        "koa-router": "^10.0.0",
+        "mongodb": "^3.6.3"
+    }
+}

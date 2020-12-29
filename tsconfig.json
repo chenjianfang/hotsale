@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"],
+      "common/*": ["./src/common/*"],
+    },
+    "module": "esNext",
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "target": "es6",
+    "lib": ["dom", "es2017"]
+  },
+  "include": ["./"],
+  "exclude": ["node_modules", "lib", "es"],
+  "awesomeTypescriptLoaderOptions": {
+    "useWebpackText": true
+  }
+}

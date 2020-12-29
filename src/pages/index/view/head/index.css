@@ -1,0 +1,11 @@
+@import "css/variable.css";
+
+.header{
+    height: 64px;
+    line-height: 64px;
+    background: $mediumGray;
+    color: $themeFont;
+    padding-left: 20px;
+    box-shadow: 0 2px 4px 0 rgba(85,85,85,.25);
+    box-sizing: border-box;
+}

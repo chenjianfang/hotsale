@@ -1,0 +1,13 @@
+@import "css/variable.css";
+
+:global{
+    .active{
+        color: $blueColor;
+    }
+}
+
+.main{
+    display: flex;
+    width: 1100px;
+    margin: 30px auto;
+}
