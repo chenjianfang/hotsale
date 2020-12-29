@@ -26,6 +26,7 @@ router.get('/spider', async (ctx) => {
         const url = `https://list.tmall.com/search_product.htm?q=${encodeURIComponent(keyword)}&sort=${sort}&style=${style}`;
         try {
             const res = await get(url);
+            console.log('res: ', res);
             const $ = cheerio.load(res);
             const data = $('#J_ItemList').find('.product');
             Array.from(data).forEach((item) => {
@@ -45,7 +46,7 @@ router.get('/spider', async (ctx) => {
                 obj.sales = sales;
                 result.push(obj);
             });
-
+            console.log('result: ', result);
             db.insertDocuments([
                 {
                     key: getDBKey({ keyword, sort, style }),
