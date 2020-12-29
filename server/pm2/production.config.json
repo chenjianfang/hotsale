@@ -1,11 +1,11 @@
 {
     "autorestart": true,
     "name": "hotsale",
-    "script": "./app.js",
+    "script": "./app/app.js",
     "instances": -1,
     "max_memory_restart": "1G",
     "env": {
         "NODE_ENV": "production"
     },
-    "cwd": "/data/web/cis.oa.com"
+    "cwd": "/data/web/hotsale/server"
 }
