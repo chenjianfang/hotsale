@@ -19,6 +19,7 @@ router.get('/spider', async (ctx) => {
         key: getDBKey({ keyword, sort, style }),
     });
     let result = [];
+    console.log(docs);
     if (!docs || !docs.length) {
         console.log({ keyword, sort, style });
 
